@@ -1,812 +1,812 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth dark">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Amir Rafiq Bhat</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Rafiq Bhat | PhD Researcher & AI / Software Engineer</title>
+  <meta name="description" content="Portfolio of Amir Rafiq Bhat - PhD Researcher in Computer Engineering specializing in Large Language Models (LLMs), NLP, Clinical AI, and Senior Software Engineer.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom glow & scrollbar styling */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .light .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .glow-effect {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
 </head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-300">
 
-<body class="index-page">
+  <!-- Background decorative glows -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="glow-effect -top-32 -left-32"></div>
+    <div class="glow-effect top-1/2 -right-32 bg-[radial-gradient(circle,rgba(56,189,248,0.1)_0%,rgba(0,0,0,0)_70%)]"></div>
+  </div>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-sky-500 flex items-center justify-center font-bold text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+          A
+        </span>
+        <span class="font-semibold text-lg tracking-tight group-hover:text-indigo-400 transition-colors">
+          Amir Rafiq Bhat
+        </span>
+      </a>
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#publications" class="hover:text-indigo-400 transition-colors">Research</a>
+        <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
+      <!-- Action items -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-800 transition-colors" title="Toggle Theme">
+          <svg id="theme-icon-dark" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          <svg id="theme-icon-light" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        </button>
 
+        <!-- CV Button -->
+        <a href="../AMIR RAFIQ BHAT CV TUSEB 2026.docx" download class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-sm shadow-indigo-600/30 transition-all hover:scale-102">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Download CV
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-900/95 px-4 pt-3 pb-5 space-y-2">
+      <a href="#about" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">About</a>
+      <a href="#publications" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">Research & Publications</a>
+      <a href="#projects" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">Projects</a>
+      <a href="#experience" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">Experience & Teaching</a>
+      <a href="#skills" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">Technical Skills</a>
+      <a href="#contact" class="block py-2 text-sm text-slate-300 hover:text-indigo-400">Contact</a>
+      <a href="../AMIR RAFIQ BHAT CV TUSEB 2026.docx" download class="block py-2 text-sm font-semibold text-indigo-400">Download CV (DOCX)</a>
+    </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Amir Rafiq Bhat</h2>
-            <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://github.com/iAmirRafiq"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/amirbhat/"><i class="bi bi-linkedin"></i></a>
-              <a href="https://x.com/1AmirRafiq"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://www.facebook.com/IArafik/"><i class="bi bi-facebook"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Text content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card text-xs font-medium text-indigo-300 border border-indigo-500/30">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            PhD Researcher • Kadir Has University
           </div>
 
-          <div class="col-lg-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+            Pioneering <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-300 to-indigo-200">Trustworthy AI</span> & Clinical Decision Support.
+          </h1>
 
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+            I am <strong class="text-white font-semibold">Amir Rafiq Bhat</strong>, an AI Research Scientist and Senior Software Engineer based in Istanbul. My work specializes in <span class="text-indigo-300 font-medium">Large Language Model (LLM) fine-tuning</span>, multi-task NLP, and mitigating catastrophic forgetting in high-stakes domains like <span class="text-sky-300 font-medium">Healthcare and E-Health</span>.
+          </p>
 
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Amir Rafiq Bhat</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#publications" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition-all hover:scale-102">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+              View Research & Papers
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium glass-card hover:bg-slate-800 text-slate-200 border border-slate-700 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              Get in Touch
+            </a>
+            <div class="flex items-center gap-2 pl-2">
+              <a href="https://github.com/iamirrafiq" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg glass-card hover:text-indigo-400 transition-colors" title="GitHub Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+              <a href="https://www.linkedin.com/in/amirbhat" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg glass-card hover:text-indigo-400 transition-colors" title="LinkedIn Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-calendar4-week icon"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Srinagar, Jammu and Kashmir, IN</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+918713810205</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@amirbhat.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <!-- Quick stats -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800">
+            <div>
+              <div class="text-2xl font-bold text-white">Ph.D.</div>
+              <div class="text-xs text-slate-400">Kadir Has Univ (2025–)</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-indigo-400">4+ Years</div>
+              <div class="text-xs text-slate-400">Engineering & Systems</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-sky-400">50+</div>
+              <div class="text-xs text-slate-400">Enterprise Data Clients</div>
+            </div>
+          </div>
+        </div>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
+        <!-- Right: Interactive Code/Model Card Terminal -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-2xl p-5 shadow-2xl relative overflow-hidden border border-slate-700/80">
+            <!-- Header bar of the card -->
+            <div class="flex items-center justify-between pb-4 border-b border-slate-700/60 mb-4 text-xs font-mono text-slate-400">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+                <span class="ml-2 text-slate-300">researcher_profile.py</span>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+              <span class="text-indigo-400 font-semibold">Python 3.11</span>
+            </div>
 
+            <!-- Code snippet -->
+            <pre class="font-mono text-xs text-slate-300 leading-relaxed overflow-x-auto"><span class="text-indigo-400">class</span> <span class="text-sky-300">AmirRafiqBhat</span>:
+  <span class="text-indigo-400">def</span> <span class="text-amber-300">__init__</span>(self):
+    self.role = <span class="text-emerald-300">"PhD Researcher & Senior SWE"</span>
+    self.university = <span class="text-emerald-300">"Kadir Has University"</span>
+    self.current_focus = [
+      <span class="text-emerald-300">"Trustworthy Multilingual LLMs"</span>,
+      <span class="text-emerald-300">"Parameter-Efficient Fine-Tuning"</span>,
+      <span class="text-emerald-300">"Clinical & Mental Health NLP"</span>,
+      <span class="text-emerald-300">"Catastrophic Forgetting Mitigation"</span>
+    ]
+    self.stack = {
+      <span class="text-sky-300">"ai_core"</span>: [<span class="text-emerald-300">"PyTorch"</span>, <span class="text-emerald-300">"HuggingFace"</span>, <span class="text-emerald-300">"PEFT/LoRA"</span>],
+      <span class="text-sky-300">"cloud"</span>: [<span class="text-emerald-300">"AWS S3/RDS"</span>, <span class="text-emerald-300">"Docker"</span>, <span class="text-emerald-300">"PostgreSQL"</span>],
+      <span class="text-sky-300">"funded_projects"</span>: [<span class="text-emerald-300">"TÜBİTAK 1001"</span>, <span class="text-emerald-300">"TEKNOFEST"</span>]
+    }
+
+  <span class="text-indigo-400">def</span> <span class="text-amber-300">status</span>(self):
+    <span class="text-indigo-400">return</span> <span class="text-emerald-300">"Open for TÜSEB & AI Research Collaborations"</span></pre>
+
+            <div class="mt-4 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> MIT-BIH Arrhythmia & Llama 3.1
+              </span>
+              <span class="text-slate-500 font-mono">Status: Ready</span>
+            </div>
+          </div>
         </div>
 
       </div>
+    </div>
+  </section>
 
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Amir Rafiq Bhat</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Amir Rafiq Bhat</strong> <span>All Rights Reserved</span>
+  <!-- FEATURED PUBLICATION SPOTLIGHT -->
+  <section id="publications" class="py-16 bg-slate-900/60 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-indigo-400 uppercase font-semibold">Scientific Contribution</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Publications & Preprints</h2>
         </div>
-        <div class="credits">
+        <span class="text-xs text-slate-400 font-medium bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+          Peer-Reviewed Research
+        </span>
+      </div>
+
+      <!-- Publication Card -->
+      <div class="glass-card rounded-xl p-6 sm:p-8 border border-indigo-500/20 hover:border-indigo-500/40 transition-all shadow-xl">
+        <div class="flex flex-wrap items-center gap-3 mb-3">
+          <span class="px-2.5 py-1 text-xs font-semibold rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/30">
+            Under Review • 2025
+          </span>
+          <span class="text-xs font-medium text-slate-400">Springer Cluster Computing</span>
+          <span class="text-xs text-indigo-400 font-mono">LLM Multi-Task Learning</span>
+        </div>
+
+        <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+          Adapting Large Language Models via Multi-Task Learning for Mental Health Problem, Emotion, and Sentiment Detection
+        </h3>
+
+        <p class="text-sm font-medium text-slate-300 mt-2">
+          <span class="text-indigo-300 font-bold underline">Amir Rafiq Bhat</span>, Rahim Dehkharghani, Zeki Erdem
+        </p>
+
+        <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+          This study introduces an empirical framework using Parameter-Efficient Fine-Tuning (PEFT/LoRA) on open-source foundation models (Llama 3.1) to jointly model mental disorders, fine-grained emotions, and sentiment from social media narratives. It specifically formulates a logging architecture to quantify and prevent <em>catastrophic forgetting</em>, demonstrating that multi-task adaptation surpasses single-task models without sacrificing baseline safety or general reasoning capabilities.
+        </p>
+
+        <div class="mt-6 pt-5 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Llama 3.1</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">PEFT / LoRA</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Catastrophic Forgetting</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Clinical NLP</span>
+          </div>
+          <button onclick="copyCitation()" id="citation-btn" class="inline-flex items-center gap-1.5 text-xs font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            <span id="citation-text">Copy BibTeX Citation</span>
+          </button>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- RESEARCH & PROJECTS SHOWCASE -->
+  <section id="projects" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-indigo-400 uppercase font-semibold">Portfolio & Works</span>
+          <h2 class="text-3xl font-bold text-white mt-1">Featured AI & Systems Projects</h2>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap gap-2" id="project-filters">
+          <button data-filter="all" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all">All Projects</button>
+          <button data-filter="llm" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">LLMs & NLP</button>
+          <button data-filter="health" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Health & Bio-AI</button>
+          <button data-filter="systems" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">Data & Cloud Systems</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Master's Thesis LLM -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="llm health">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 font-semibold">MS Thesis</span>
+              <span class="font-mono">Llama 3.1 • PEFT</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Multi-Task LLM Adaptation Framework</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Fine-tuned open-source Llama 3.1 models for simultaneous mental health disorder detection, emotion recognition, and sentiment classification using Parameter-Efficient Fine-Tuning.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-indigo-300">
+              ⚡ Quantified & mitigated catastrophic forgetting across multi-label psychiatric tasks.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">PyTorch</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">HuggingFace</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">LoRA</span>
+          </div>
+        </div>
+
+        <!-- 2. ECG Arrhythmia Classification -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="health">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-semibold">Biomedical AI</span>
+              <span class="font-mono">MIT-BIH Dataset</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Automated ECG Signal Arrhythmia Classifier</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Developed Recurrent Neural Networks (RNNs, Bi-LSTM) and Multi-Layer Perceptrons to analyze multi-channel ECG signals for real-time cardiac arrhythmia diagnosis.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-emerald-300">
+              ❤️ Extracted temporal and spectral heartbeat features to assist clinical decision-making.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Deep Learning</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Bi-LSTM</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Signal Processing</span>
+          </div>
+        </div>
+
+        <!-- 3. Turkey Earthquake Disaster NLP -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="llm">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-sky-500/10 text-sky-400 font-semibold">Disaster Response</span>
+              <span class="font-mono">Turkish NLP</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Twitter Disaster NLP & Topic Modeling</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Engineered data mining and topic modeling pipelines (BERTopic, LDA, STM, NMF) processing millions of tweets during the Feb 6, 2023 Turkey earthquake for collective sense-making.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-sky-300">
+              📊 Surfaced emergent rescue bottlenecks, sentiment dynamics, and relief needs.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">BERTopic</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Snscrape</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Unsupervised NLP</span>
+          </div>
+        </div>
+
+        <!-- 4. AI Lecture Conspectus Generator -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="llm">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 font-semibold">Generative AI</span>
+              <span class="font-mono">Google Gemini API</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">AI Lecture Conspectus Generator & QA</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Built an automated knowledge extraction system at Vilnius Tech that transforms unstructured educational transcripts into structured conspectuses, hierarchical summaries, and study guides.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-purple-300">
+              🧠 Prompt-engineered multi-stage summarization with RAG concept mapping.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Gemini API</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">FastAPI</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <!-- 5. Enterprise Data & Cloud Engineering -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="systems">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold">Production Platform</span>
+              <span class="font-mono">AWS • PostgreSQL</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Enterprise ETL & Analytics Infrastructure</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Designed end-to-end data systems at Y Point Analytics using CloverDX, AWS (S3, RDS), MySQL, and PostgreSQL, powering 20+ live dashboards and 180+ reports for 50+ enterprise clients.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-blue-300">
+              ⚙️ Automated web scraping across 20+ sources, slashing execution time by 80%.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">AWS (S3/RDS)</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">ETL Pipelines</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Selenium</span>
+          </div>
+        </div>
+
+        <!-- 6. Elderly Meal Delivery Route Optimization -->
+        <div class="project-card glass-card rounded-xl p-6 flex flex-col justify-between border border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all" data-category="systems health">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+              <span class="px-2 py-0.5 rounded bg-teal-500/10 text-teal-400 font-semibold">Social Impact</span>
+              <span class="font-mono">OR-Tools • Angular</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Elderly Care Meal Delivery Routing Platform</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Built a full-stack platform (Angular, Node.js, MySQL) integrating Google OR-Tools combinatorial optimization to automate route planning for volunteer meal delivery to homebound seniors.
+            </p>
+            <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 mb-4 text-xs font-mono text-teal-300">
+              🚀 Reduced vehicle dispatch and delivery transit duration by 30%.
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Google OR-Tools</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Node.js</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded">Optimization</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DUAL TRACK TIMELINE: RESEARCH & INDUSTRY -->
+  <section id="experience" class="py-20 bg-slate-900/40 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-mono tracking-widest text-indigo-400 uppercase font-semibold">Journey & Experience</span>
+        <h2 class="text-3xl font-bold text-white mt-1">Academic Research & Industry Leadership</h2>
+        <p class="text-sm text-slate-400 mt-2">Bridging high-impact academic scholarship with production engineering rigor.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Column 1: Academic & Research Experience -->
+        <div class="space-y-8">
+          <div class="flex items-center gap-3 pb-3 border-b border-indigo-500/30">
+            <span class="p-2 rounded-lg bg-indigo-600/20 text-indigo-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+            </span>
+            <h3 class="text-xl font-bold text-white">Research & Teaching</h3>
+          </div>
+
+          <div class="relative pl-6 space-y-8 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800">
+
+            <!-- Ph.D. -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-indigo-500 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-indigo-400 font-semibold">Sep 2025 – Present</div>
+              <h4 class="text-base font-bold text-white">Ph.D. in Computer Engineering</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Kadir Has University • Istanbul, Türkiye</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Conducting research on Trustworthy Multilingual LLMs, Cross-Lingual Knowledge Transfer, Hallucination Reduction, and Grounded Generation for Healthcare / Clinical Decision Support.
+              </p>
+            </div>
+
+            <!-- NLP TA -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-indigo-400 font-semibold">Jan 2025 – Present</div>
+              <h4 class="text-base font-bold text-white">Graduate Teaching Assistant – NLP</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Kadir Has University</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Instructing undergraduate students in transformer architectures, tokenization, embeddings, and sentiment/emotion models with PyTorch and Hugging Face lab sessions.
+              </p>
+            </div>
+
+            <!-- NLP Mentor TEKNOFEST -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-indigo-400 font-semibold">Jul 2025 – Aug 2025</div>
+              <h4 class="text-base font-bold text-white">Mentor – Turkish NLP Competition</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Bilişim Vadisi & TEKNOFEST</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Selected as official mentor for Türkiye's national competition; advised teams on transformer optimization and low-resource Turkish NLP pipelines.
+              </p>
+            </div>
+
+            <!-- Moral Intuitions Lab -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-indigo-400 font-semibold">Jun 2024 – Sep 2024</div>
+              <h4 class="text-base font-bold text-white">Research Assistant – TÜBİTAK 1001 Project</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Moral Intuitions Laboratory, Kadir Has Univ</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Applied Random Forest and Decision Tree models in Python and R on behavioral decision-making datasets investigating identity and scarcity effects.
+              </p>
+            </div>
+
+            <!-- MS Degree -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-indigo-400 font-semibold">2023 – Jul 2025</div>
+              <h4 class="text-base font-bold text-white">M.Sc. in Computer Engineering (Thesis)</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Kadir Has University • GPA: 3.34 / 4.0</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Thesis on multi-task LLM adaptation for psychiatric problem detection from social media. Included Erasmus+ AI exchange at Vilnius Tech.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Industry & Software Engineering Experience -->
+        <div class="space-y-8">
+          <div class="flex items-center gap-3 pb-3 border-b border-sky-500/30">
+            <span class="p-2 rounded-lg bg-sky-600/20 text-sky-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </span>
+            <h3 class="text-xl font-bold text-white">Industry Software Engineering</h3>
+          </div>
+
+          <div class="relative pl-6 space-y-8 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800">
+
+            <!-- Senior Software Engineer -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-sky-500 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-sky-400 font-semibold">May 2025 – Present</div>
+              <h4 class="text-base font-bold text-white">Senior Software Engineer</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Y Point Analytics • Virginia, USA (Remote)</div>
+              <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Architect enterprise data platforms across AWS (S3, RDS), PostgreSQL, and MySQL.</li>
+                <li>Direct pipeline modernization powering 20+ live analytical dashboards and 180+ automated reports for 50+ enterprise clients.</li>
+                <li>Lead database optimization initiatives, ensuring compliance, low-latency querying, and high throughput.</li>
+              </ul>
+            </div>
+
+            <!-- Software Engineer -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-sky-400 font-semibold">Jun 2021 – May 2025</div>
+              <h4 class="text-base font-bold text-white">Software Engineer</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">Y Point Analytics • Virginia, USA (Remote)</div>
+              <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Reverse-engineered legacy ERP systems, restructuring schema and improving query throughput by 60%.</li>
+                <li>Developed web scraping and ETL automation framework in Python/Selenium across 20+ sources, slashing execution times by 80%.</li>
+                <li>Created full-stack elderly meal delivery platform (Angular, Node.js) with Google OR-Tools optimization, cutting transit by 30%.</li>
+              </ul>
+            </div>
+
+            <!-- Kashmir Undergrad -->
+            <div class="relative">
+              <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+              <div class="text-xs font-mono text-sky-400 font-semibold">Dec 2016 – Dec 2021</div>
+              <h4 class="text-base font-bold text-white">B.E. in Computer Engineering</h4>
+              <div class="text-xs font-medium text-slate-400 mb-2">University of Kashmir • Srinagar, India</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Graduated with GPA 7.29/10.0. Capstone on Real-time IoT Air Quality Monitoring and Weather Forecasting.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS MATRIX -->
+  <section id="skills" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-mono tracking-widest text-indigo-400 uppercase font-semibold">Core Competencies</span>
+        <h2 class="text-3xl font-bold text-white mt-1">Technical Skills & Domain Expertise</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- AI & LLMs -->
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-3">AI, LLMs & Deep Learning</h3>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• Large Language Models (LLMs)</li>
+            <li>• PEFT / LoRA / QLoRA</li>
+            <li>• PyTorch & Hugging Face</li>
+            <li>• Multi-Task Learning (MTL)</li>
+            <li>• RAG & Prompt Engineering</li>
+            <li>• BERTopic & Topic Models</li>
+            <li>• RNNs, Bi-LSTM, CNNs</li>
+          </ul>
+        </div>
+
+        <!-- Programming -->
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-sky-600/20 text-sky-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-3">Programming Languages</h3>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• Python <span class="text-indigo-400 font-mono">(Advanced)</span></li>
+            <li>• SQL <span class="text-sky-400 font-mono">(Proficient)</span></li>
+            <li>• R <span class="text-slate-400 font-mono">(Statistical ML)</span></li>
+            <li>• JavaScript / TypeScript</li>
+            <li>• Java & C / C++</li>
+          </ul>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-3">Data & Cloud Systems</h3>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• AWS (S3, RDS, EC2)</li>
+            <li>• PostgreSQL, MySQL, SQLite</li>
+            <li>• Databricks & PySpark</li>
+            <li>• CloverDX ETL Pipelines</li>
+            <li>• Docker & Containerization</li>
+            <li>• Git, GitHub & GitLab</li>
+            <li>• REST API Design (FastAPI)</li>
+          </ul>
+        </div>
+
+        <!-- Languages & Localization -->
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/20 text-amber-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-3">Spoken Languages</h3>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>• English <span class="text-emerald-400 font-mono">(Fluent)</span></li>
+            <li>• Turkish <span class="text-amber-400 font-mono">(Working)</span></li>
+            <li>• Urdu & Hindi <span class="text-slate-400 font-mono">(Native)</span></li>
+            <li>• Kashmiri <span class="text-slate-400 font-mono">(Native)</span></li>
+            <li>• Arabic <span class="text-slate-400 font-mono">(Elementary)</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & CALL TO ACTION -->
+  <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card rounded-2xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl text-center">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-4">
+          Open for Collaborative Research & Consulting
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+          Let’s Build Frontier AI Solutions Together
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto mb-8 leading-relaxed">
+          Whether you are exploring grant partnerships (TÜSEB, TÜBİTAK, Horizon Europe), seeking LLM fine-tuning consultation, or building production data platforms, I would love to connect.
+        </p>
+
+        <!-- Direct Email Pill with Copy Feature -->
+        <div class="inline-flex flex-col sm:flex-row items-center gap-3 p-2 rounded-xl bg-slate-900/90 border border-slate-700 max-w-md mx-auto mb-8">
+          <span class="font-mono text-xs sm:text-sm text-indigo-300 px-3">
+            amirrafiqbhat@gmail.com
+          </span>
+          <button onclick="copyEmail()" id="copy-email-btn" class="w-full sm:w-auto px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow transition-all">
+            <span id="copy-text">Copy Email</span>
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
+          <a href="mailto:amirrafiqbhat@gmail.com" class="hover:text-white transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            Send Direct Email
+          </a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/amirbhat" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+            LinkedIn Profile
+          </a>
+          <span>•</span>
+          <a href="https://github.com/iamirrafiq" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+            GitHub Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>© 2026 Amir Rafiq Bhat. Designed for Academic Research & High-Performance Engineering.</p>
+      <p class="mt-1 text-slate-600">Istanbul, Republic of Türkiye • Kadir Has University</p>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-lg bg-indigo-600 text-white text-xs font-semibold shadow-xl shadow-indigo-600/30 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none z-50">
+    Copied to clipboard!
+  </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- INTERACTIVE LOGIC -->
+  <script>
+    // Project Category Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-indigo-600', 'text-white', 'active');
+          b.classList.add('bg-slate-800', 'text-slate-300');
+        });
+        btn.classList.add('bg-indigo-600', 'text-white', 'active');
+        btn.classList.remove('bg-slate-800', 'text-slate-300');
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
 
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Toast helper
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.innerText = message;
+      toast.classList.remove('translate-y-16', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-16', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2500);
+    }
+
+    // Copy Email
+    function copyEmail() {
+      navigator.clipboard.writeText('amirrafiqbhat@gmail.com').then(() => {
+        const btn = document.getElementById('copy-text');
+        btn.innerText = 'Copied!';
+        showToast('Email copied to clipboard!');
+        setTimeout(() => { btn.innerText = 'Copy Email'; }, 2000);
+      });
+    }
+
+    // Copy Citation
+    function copyCitation() {
+      const bibtex = `@article{bhat2025adapting,
+  title={Adapting Large Language Models via Multi-Task Learning for Mental Health Problem, Emotion, and Sentiment Detection},
+  author={Bhat, Amir Rafiq and Dehkharghani, Rahim and Erdem, Zeki},
+  journal={Springer Cluster Computing},
+  year={2025},
+  note={Under Review}
+}`;
+      navigator.clipboard.writeText(bibtex).then(() => {
+        const text = document.getElementById('citation-text');
+        text.innerText = 'Citation Copied (BibTeX)!';
+        showToast('BibTeX Citation copied!');
+        setTimeout(() => { text.innerText = 'Copy BibTeX Citation'; }, 2500);
+      });
+    }
+
+    // Dark / Light Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-icon-dark');
+    const lightIcon = document.getElementById('theme-icon-light');
+
+    function updateThemeIcons() {
+      if (document.documentElement.classList.contains('dark')) {
+        darkIcon.classList.remove('hidden');
+        lightIcon.classList.add('hidden');
+      } else {
+        darkIcon.classList.add('hidden');
+        lightIcon.classList.remove('hidden');
+      }
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      updateThemeIcons();
+    });
+
+    // Check system or saved preference
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+    }
+    updateThemeIcons();
+  </script>
 </body>
-
 </html>
